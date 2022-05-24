@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <title>Biolina</title>
+    <style>
+        .html{
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+    <nav class="w3-bar w3-blue w3-center">
+        <p class="w3-center"> Compatibility issues on Mobile devices acknowledged.</p>
+    </nav>
+    <nav class="w3-bar w3-black w3-center">
+        <a href="../songs" class="w3-button w3-black">Songs/Releases</a>
+        <p class="w3-button w3-black"></p>
+        <p class="w3-button w3-black"></p>
+        <a href="../about" class="w3-button w3-black">About</a>
+        <p class="w3-button w3-black" id="no-highlight"></p>
+        <p class="w3-button w3-black"></p>
+        <a href="../index.html" class="w3-button" style="width:4%" id="nav-broken">
+            <img src="../assets/logo.png" width="100%">
+        </a>
+        <script type="text/javascript">
+            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            var element = document.getElementById('nav-broken');
+            if (isMobile) {
+                  element.style.width = "15%";
+                  console.log("15")
+            } else {
+                element.style.width = "80px";
+                console.log("4")
+            }
+        </script>
+                <p class="w3-button w3-black"></p>
+                <p class="w3-button w3-black"></p>
+        <a href="../store" class="w3-button w3-black">Store</a>
+                <p class="w3-button w3-black"></p>
+                <p class="w3-button w3-black"></p>
+        <a href="../contact" class="w3-button w3-black">Contact</a>
+    </nav>
+    <img src="../assets/banner.png" class="w3-center" id="banned" width="100%">
+    <script type="text/javascript">
+        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        var element = document.getElementById('banned');
+        if (isMobile) {
+              element.style.width = "300%";
+              element.className = "w3-left";
+              console.log("15")
+        } else {
+            element.style.width = "100%";
+            console.log("4")
+        }
+        </script>
+    <div class="container">
+        <div class="centered"><h1>Biolina</h1></div>
+    </div>
+    <style>
+        .centered {
+          position: absolute;
+          top: 48%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+    </style>
+    <section class="w3-container w3-content w3-center w3-light-gray w3-context" style="max-width:100%">
+        <h1>
+            Welcome to Biolina
+        </h1>
+        <p>Inspired by BoyWithUke, I hope to bring in meaningful songs towards everyone. <a href="../about/">Read more»</a></p>
+    </section>
+
+    <section class="w3-container w3-content w3-center w3-context w3-white" style="max-width:100%">
+        <h1>Releases</h1>
+        <section class="w3-left w3-container" style="width:50%">
+                <section class="w3-center" style="max-width:100%">
+                    <video src="../assets/music-vid.mp4" style="width:50%; height:fit-content" type="video/mp4" controls="true" loop="false" preload="auto" poster="../assets/logo.png"></video>
+                </section>
+            </section>
+        <section class="w3-right w3-container" style="width:50%">
+            <section class="w3-center" style="max-width:100%">
+                <h2 class="w3-center">
+                    Current one and only
+                </h2>
+            </section>
+    </section>
+</section>
+
+<footer class="w3-footer w3-black w3-container w3-center w3-context" style="max-width:100%">
+    <p>You hit the bottom... or have you?</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <title>404: Page not found</title>
+</head>
+<body style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+    <nav class="w3-bar w3-blue w3-center">
+        <p class="w3-center"> Compatibility issues on Mobile devices acknowledged.</p>
+    </nav>
+    <nav class="w3-bar w3-black w3-center">
+        <a href="./songs" class="w3-button w3-black">Songs/Releases</a>
+        <p class="w3-button w3-black"></p>
+        <p class="w3-button w3-black"></p>
+        <a href="./about" class="w3-button w3-black">About</a>
+        <p class="w3-button w3-black" id="no-highlight"></p>
+        <p class="w3-button w3-black"></p>
+        <a href="./index.html" class="w3-button" style="width:4%" id="nav-broken">
+            <img src="./assets/logo.png" width="100%">
+        </a>
+        <script type="text/javascript">
+            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            var element = document.getElementById('nav-broken');
+            if (isMobile) {
+                  element.style.width = "15%";
+                  console.log("15")
+            } else {
+                element.style.width = "80px";
+                console.log("4")
+            }
+        </script>
+                <p class="w3-button w3-black"></p>
+                <p class="w3-button w3-black"></p>
+        <a href="./store" class="w3-button w3-black">Store</a>
+                <p class="w3-button w3-black"></p>
+                <p class="w3-button w3-black"></p>
+        <a href="./contact" class="w3-button w3-black">Contact</a>
+        <p class="w3-button w3-black"></p>
+    </nav>
+
+    <section class="w3-content w3-context w3-center" style="max-width:100%"> 
+        <img src="./assets/banner.png" class="w3-center" id="banned" width="100%">
+        <div class="container">
+            <div class="centered"><h1>4-Oh-Four</h1></div>
+        </div>
+        <style>
+            .centered {
+              position: absolute;
+              top: 48%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+        </style>
+    </section>
+
+    <section class="w3-content w3-container w3-context w3-center" style="max-width:100%">
+        <h1>Whoops, you entered the 4-Oh-Four zone. Click <a href="index.html" style="height:min-content">here</a> to return to homepage.</h1>
+    </section>
+    
+</body>
+</html>
